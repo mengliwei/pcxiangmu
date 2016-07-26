@@ -39,5 +39,5 @@
         }, 10);
     }
 
-    window.mlw = move;
+    window.zhufengAnimate = move;
 }();

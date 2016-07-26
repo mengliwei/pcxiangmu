@@ -1,5 +1,7 @@
 var utils = (function () {
-    var flag="getComputedStyle" in window;
+    var flag = "getComputedStyle" in window;
+
+    //->listToArray:把类数组集合转换为数组
     function listToArray(likeAry) {
         if (flag) {
             return Array.prototype.slice.call(likeAry, 0);
@@ -295,43 +297,9 @@ var utils = (function () {
             setGroupCss.apply(curEle, ary);
         }
     }
-    function yunSu(a, b, c, d) {
-        return a * c / d + b;
-    }
 
-    function animate(curEle, target, duration) {
-        var begin = {}, cheng = {};
-        for (var key in target) {
-            if (target.hasOwnProperty(key)) {
-                begin[key] = css(curEle, key);
-                cheng[key] = target[key] - begin[key];
-            }
-        }
-        var time = 0;
-        window.clearInterval(curEle.timer);
-        curEle.timer = window.setInterval(
-            function () {
-            time+=5;
-                if(time>=duration){
-                    for (var key in target){
-                        if(target.hasOwnProperty(key)){
-                            css(curEle,key,target[key]);
-                        }
-                    }
-                    window.clearInterval(curEle.timer);
-                }
-                for (key in cheng){
-                    if(cheng.hasOwnProperty(key)){
-                        var temp=yunSu(time,begin[key],cheng[key],duration);
-                        css(curEle,key,temp);
-                    }
-                }
-            },5);
-
-    }
-
-
-    return{
+    //->把外界需要使用的方法暴露给utils
+    return {
         win: win,
         offset: offset,
         listToArray: listToArray,
@@ -354,8 +322,6 @@ var utils = (function () {
         addClass: addClass,
         removeClass: removeClass,
         getElementsByClass: getElementsByClass,
-        css:css,
-        animate:animate
+        css: css
     }
-
 })();

@@ -1,0 +1,233 @@
+
+
+
+
+
+/*公司简介*/
+.jianjie {
+    margin-top: .38rem;
+    padding-bottom: .38rem;
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+}
+
+.jj_d {
+    margin: 0 auto;
+    width: 10.4rem;
+    overflow: hidden;
+    padding-bottom: .1rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.gg_z1 {
+    float: left;
+    font-size: 16px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    color: #333332;
+    margin-top: .15rem;
+}
+
+.gg_z2 {
+    float: right;
+    margin-top: .15rem;
+    padding-top: .04rem;
+    color: #999999;
+}
+
+.gg_z2:hover {
+    color: #f7941d;
+}
+
+.jj_p {
+    margin: 0 auto;
+    padding-top: .15rem;
+    width: 10.4rem;
+    height: 2.56rem;
+    overflow: hidden;
+}
+
+.jj_p a, .jj_p em {
+    float: left;
+    margin-right: .1rem;
+}
+
+.jj_p a {
+    width: 2.22rem;
+    height: 2.56rem;
+    overflow: hidden;
+}
+
+.jj_p a img {
+    height: 100%;
+    width: 100%;
+}
+
+.jj_p p {
+    margin-top: .5rem;
+    margin-left: 2.6rem;
+    text-indent: 2em;
+    font-size: 18px;
+    line-height: 40px;
+    color: #333332;
+}
+
+
+/*合作导演*/
+.banner {
+    position: relative;
+    margin: .38rem auto 0 auto;
+    width: 10.44rem;
+    height: 2.6rem;
+    /*background: #f7941d;*/
+    overflow: hidden;
+}
+.banner>em:nth-of-type(1){
+    position: absolute;
+    left: 5.2rem;
+    top: 0;
+    width: 4px;
+    height: 2.6rem;
+    background-color: #ccc;
+    box-shadow: 4px 4px 8px  #ccc;
+}
+.banner>em:nth-of-type(2){
+    position: absolute;
+    left: 5.28rem;
+    top: 0;
+    width: 4px;
+    height: 2.6rem;
+    background-color: #ccc;
+    box-shadow: -4px -4px 8px  #ccc;
+}
+.banner .bd_2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5.22rem;
+    height: 2.6rem;
+    overflow: hidden;
+}
+.banner .bd_3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5.22rem;
+    height: 2.6rem;
+    overflow: hidden;
+}
+.banner .bd_3 .bd_3_img1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.2rem;
+    height: 2.6rem;
+}
+.banner .bd_2 .bd_2_img1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.2rem;
+    height: 2.6rem;
+}
+.banner .bd_2_img2{
+    display:none;
+    position: absolute;
+    left: 2.2rem;
+    top: 0;
+    width: 8.32rem;
+    height: 2.6rem;
+}
+.banner .bd_3_img2{
+    display: none;
+    position: absolute;
+    right: 2.08rem;
+    top: 0;
+    width: 8.32rem;
+    height: 2.6rem;
+}
+.banner .bd_2>div{
+    position: absolute;
+    left: 2.2rem;
+    top: 0;
+    width: 3rem;
+    height: 2.6rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.banner .bd_3>div{
+    position: absolute;
+    right: 2.2rem;
+    top: 0;
+    width: 2.9rem;
+    height: 2.6rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.banner .bd_2>div p,.banner .bd_3>div p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:0 0.2rem 0 0.2rem;
+    width: 2.8rem;
+    height: 2.6rem;
+    font-size: 16px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+/*合作演员*/
+.td {
+    margin-top: .38rem;
+   /* padding-bottom: .38rem;*/
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+}
+
+.td .td_u {
+    margin: .38rem auto;
+    width: 10.44rem;
+    overflow: hidden;
+}
+.td .td_u li{
+    position: relative;
+    float: left;
+    margin-right: .11rem;
+    width: 2rem;
+    height: 2.4rem;
+    overflow: hidden;
+}
+.small_banner_move {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=90);
+}
+.small_banner_move h2 {
+    margin-top: 10px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+
+.small_banner_move p {
+    margin: 6px 8px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #000;
+}
+.td .td_u li:nth-child(5){
+    margin-right:0;
+}
+.td .td_u li img{
+    width: 100%;
+    height: 100%;
+}
+
